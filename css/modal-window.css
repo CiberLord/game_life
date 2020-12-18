@@ -1,0 +1,22 @@
+.mask{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 900;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(26, 25, 25, 0.7);
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(224, 230, 152);
+}
+.body-hidden{
+    overflow: hidden;
+}

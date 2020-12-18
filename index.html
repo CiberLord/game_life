@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/modal-window.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Anima.js"></script>
+    <script src="js/LifeGame.js"></script>
+    <script src="js/Timer.js"></script>
+    <title>Игра "Жизнь"</title>
+</head>
+
+<body>
+    <section class="menu">
+        <div class="button" id="edit">
+            edit
+        </div>
+        <div class="button disable" id="clear">
+            clear
+        </div>
+        <div class="button disable" id="step">
+            one step
+        </div>
+        <div class="button" id="run">
+            run
+        </div>
+        <div class="button" id="setup">
+            setup
+        </div>
+
+    </section>
+    <section class="sec">
+        <canvas id="canvas" width="100" height="100"></canvas>
+    </section>
+    <div class="modal setup">
+        <ul class="setup-list">
+            <li>
+                <div class="input-text">world size:</div>
+                <input class="input" type="number" id="worldSize">
+            </li>
+            <li>
+                <div class="input-text">canvas size:</div>
+                <input class="input" type="number" id="cnvSize">
+            </li>
+            <li>
+                <div class="input-text">fps:</div>
+                <input class="input" type="number" id="fps">
+            </li>
+            <li class="grid-show">
+                <div class="input-text">grid show:</div>
+                <input type="checkbox" id="grid">
+            </li>
+        </ul>
+        <div class="setup-exit">
+            <div class="button" id="cancel">cancel</div>
+            <div class="button" id="ok">ok</div>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- https://github.com/CiberLord/game_Life -->
